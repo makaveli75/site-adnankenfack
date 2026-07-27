@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="favicon.png?v=2">
+<link rel="apple-touch-icon" href="favicon.png">
+<title>Le SEO, c'est quoi ? — Adnan Kenfack</title>
+<meta name="description" content="Le référencement naturel expliqué simplement : comment Google t'amène des clients gratuitement, et par où commencer.">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+    {"@type":"Question","name":"Est-ce que le SEO est gratuit ?","acceptedAnswer":{"@type":"Answer","text":"Le SEO est gratuit au clic, contrairement à la publicité : tu ne paies pas Google pour apparaître. En revanche il demande du temps, des compétences ou l'accompagnement d'un consultant SEO. C'est un investissement, pas une dépense au clic."}},
+    {"@type":"Question","name":"Comment faire du SEO ? Par où commencer ?","acceptedAnswer":{"@type":"Answer","text":"Commence par identifier ce que ta cible tape réellement sur Google, vérifie les bases techniques de ton site (vitesse, indexation, mobile), puis crée du contenu qui répond précisément à ces recherches."}},
+    {"@type":"Question","name":"Quels sont les 3 types de SEO ?","acceptedAnswer":{"@type":"Answer","text":"Le SEO technique (structure, vitesse, indexation), le SEO on-page (contenu et mots-clés) et le SEO off-page (netlinking et autorité). Les trois se complètent."}},
+    {"@type":"Question","name":"Quelle différence entre SEO et SEA ?","acceptedAnswer":{"@type":"Answer","text":"Le SEO est le référencement naturel : gratuit au clic et durable. Le SEA est la publicité payante (Google Ads) : immédiat, mais le trafic s'arrête dès que tu coupes le budget."}},
+    {"@type":"Question","name":"Combien de temps avant de voir des résultats en SEO ?","acceptedAnswer":{"@type":"Answer","text":"En général 3 à 6 mois pour des résultats significatifs. Le SEO est lent à démarrer mais construit un actif durable."}}
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--navy:#0F1B36;--navy2:#16233F;--white:#FFFFFF;--muted:#AAB9D2;--gold:#E6B04B;--blue:#4A82F0}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Poppins',sans-serif;background:var(--navy);color:var(--white);line-height:1.7;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+  .article{max-width:720px;margin:0 auto;padding:0 24px}
+  a{text-decoration:none;color:inherit}
+  nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0}
+  .logo{font-weight:700;font-size:22px;letter-spacing:1px}
+  .logo span{color:var(--gold)}
+  .navlinks{display:flex;align-items:center;gap:26px}
+  .navlinks a{font-size:15px;color:var(--white);transition:opacity .15s}
+  .navlinks a:hover{opacity:.7}
+  .btn{display:inline-block;background:var(--gold);color:var(--navy);font-weight:600;font-size:14px;padding:10px 22px;border-radius:40px}
+  .back{color:var(--muted);font-size:14px;display:inline-block;margin:30px 0 20px}
+  .tag{display:inline-block;background:rgba(74,130,240,.15);color:var(--blue);font-size:12px;font-weight:600;padding:5px 12px;border-radius:20px;margin-bottom:20px}
+  .article h1{font-size:40px;font-weight:700;line-height:1.15;margin-bottom:18px}
+  .article .lead{color:var(--muted);font-size:19px;margin-bottom:40px;padding-bottom:30px;border-bottom:1px solid #24345a}
+  .article h2{font-size:26px;font-weight:600;margin:40px 0 14px;color:var(--white)}
+  .article p{color:#d5dced;font-size:17px;margin-bottom:20px}
+  .article strong{color:var(--white);font-weight:600}
+  .article ul{margin:0 0 20px 22px;color:#d5dced}
+  .article li{margin-bottom:10px}
+  .hero-img{width:100%;border-radius:16px;margin:0 0 40px;display:block}
+  table.data{width:100%;border-collapse:collapse;margin:26px 0;font-size:15px;border-radius:12px;overflow:hidden}
+  table.data th{background:var(--navy2);color:var(--white);text-align:left;padding:14px 16px;font-weight:600;font-size:14px}
+  table.data td{padding:14px 16px;border-top:1px solid #24345a;color:#d5dced}
+  table.data tr td:first-child{font-weight:600;color:var(--white)}
+  .callout{background:rgba(74,130,240,.12);border:1px solid rgba(74,130,240,.35);border-radius:14px;padding:22px 24px;margin:30px 0}
+  .callout .c-title{color:var(--blue);font-weight:600;font-size:15px;margin-bottom:8px}
+  .callout p{margin:0;font-size:16px;color:#d5dced}
+  .callout.gold{background:rgba(230,176,75,.10);border-color:rgba(230,176,75,.4)}
+  .callout.gold .c-title{color:var(--gold)}
+  .faq{margin-top:14px}
+  .faq details{border:1px solid #24345a;border-radius:12px;margin-bottom:12px;background:var(--navy2)}
+  .faq summary{cursor:pointer;padding:18px 22px;font-weight:600;font-size:17px;color:var(--white);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"+";color:var(--gold);font-size:26px;font-weight:400;line-height:1}
+  .faq details[open] summary::after{content:"\2013"}
+  .faq details .a{padding:0 22px 20px;color:#d5dced;font-size:16px}
+  .faq details .a a{color:var(--gold);font-weight:600}
+  .cta-band{background:var(--navy2);border-radius:20px;text-align:center;padding:44px 28px;margin:50px auto 60px;max-width:720px}
+  .cta-band h3{font-size:26px;font-weight:700;margin-bottom:12px}
+  .cta-band p{color:var(--muted);margin-bottom:24px}
+  .cta-band .btn{font-size:15px;padding:13px 26px}
+  footer{border-top:1px solid #24345a;padding:40px 0;text-align:center;color:var(--muted);font-size:14px}
+  footer a{color:var(--gold)}
+  @media(max-width:640px){.article h1{font-size:30px}.navlinks a:not(.btn){display:none}}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <nav>
+    <a href="index.html" class="logo">A<span>K</span></a>
+    <div class="navlinks">
+      <a href="index.html">Accueil</a>
+      <a href="blog.html">Blog</a>
+      <a href="https://calendly.com/adnan-kenfack/consultation" target="_blank" rel="noopener" class="btn">Réserver un audit</a>
+    </div>
+  </nav>
+</div>
+
+<div class="article">
+  <a href="blog.html" class="back">← Retour au blog</a>
+  <span class="tag">SEO</span>
+  <h1>Le SEO, c'est quoi (et pourquoi ça compte pour ton business) ?</h1>
+  <p class="lead">Tout le monde te dit « fais du SEO ». Mais concrètement, c'est quoi, et pourquoi ça peut devenir ta meilleure source de clients ? On décortique, sans jargon.</p>
+
+  <img class="hero-img" src="images/hero-seo.png" alt="Le SEO, c'est quoi ? Le référencement naturel expliqué simplement">
+
+  <h2>La définition simple</h2>
+  <p><strong>Le SEO (Search Engine Optimization), c'est le référencement naturel :</strong> l'ensemble des techniques pour que ton site apparaisse le plus haut possible dans les résultats de Google, sans payer pour chaque clic.</p>
+  <p>La grande différence avec la <strong>pub (Google Ads / SEA)</strong>, c'est que le SEO est « gratuit » au clic. Tu n'achètes pas ta place, tu la <strong>mérites</strong> en étant le résultat le plus pertinent pour ce que les gens tapent.</p>
+
+  <table class="data">
+    <tr><th></th><th>SEO (naturel)</th><th>SEA (pub)</th></tr>
+    <tr><td>Coût par clic</td><td>Gratuit</td><td>Payant</td></tr>
+    <tr><td>Délai de résultat</td><td>Quelques mois</td><td>Immédiat</td></tr>
+    <tr><td>Durée dans le temps</td><td>Durable</td><td>S'arrête avec le budget</td></tr>
+    <tr><td>Nature</td><td>Un actif que tu construis</td><td>Un trafic que tu loues</td></tr>
+  </table>
+
+  <h2>Pourquoi c'est puissant</h2>
+  <p>Quand quelqu'un tape une recherche sur Google, il exprime un <strong>besoin précis, à l'instant T</strong>. S'il tombe sur ton site en première page, tu captes un prospect déjà en demande — sans avoir dépensé un euro de pub pour ce clic.</p>
+  <p>Contrairement à la pub qui s'arrête dès que tu coupes le budget, un bon positionnement SEO continue de te ramener du trafic mois après mois. C'est un actif qui travaille pour toi en continu.</p>
+
+  <h2>Les 3 piliers du SEO</h2>
+  <ul>
+    <li><strong>La technique :</strong> ton site doit être rapide, lisible par Google, et bien structuré (balises, vitesse, mobile).</li>
+    <li><strong>Le contenu :</strong> répondre précisément aux questions que ta cible tape sur Google, mieux que les autres.</li>
+    <li><strong>La popularité :</strong> obtenir des liens depuis d'autres sites de qualité, qui envoient un signal de confiance à Google.</li>
+  </ul>
+
+  <div class="callout">
+    <div class="c-title">Le conseil clé</div>
+    <p>Un bon SEO ne cherche pas à écrire <strong>beaucoup</strong>, il cherche à répondre à la <strong>bonne intention de recherche</strong>. Un seul article qui répond parfaitement à une question vaut mieux que dix articles creux.</p>
+  </div>
+
+  <h2>Par où commencer ?</h2>
+  <p>Avant de te lancer tête baissée dans la rédaction d'articles, pose-toi une question : <strong>qu'est-ce que ta cible tape réellement sur Google ?</strong> C'est là que tout commence. Un bon SEO ne cherche pas à écrire beaucoup, il cherche à répondre à la bonne intention de recherche.</p>
+  <p>Ensuite, vérifie les bases techniques (ton site est-il bien indexé, rapide, lisible sur mobile ?), puis construis ton contenu autour des recherches qui comptent pour ton business.</p>
+
+  <h2>Le mot de la fin</h2>
+  <p>Le SEO n'est pas magique, et ce n'est pas instantané — il faut quelques mois avant de voir les résultats. Mais c'est l'un des rares canaux qui te construit un actif durable. La pub te loue des clients ; le SEO t'en fabrique.</p>
+
+  <h2>Questions fréquentes sur le SEO</h2>
+  <div class="faq">
+    <details><summary>Est-ce que le SEO est gratuit ?</summary><div class="a">Le SEO est gratuit au clic, contrairement à la publicité : tu ne paies pas Google pour apparaître. En revanche, il demande du temps, des compétences ou l'accompagnement d'un <a href="consultant-seo.html">consultant SEO</a>. C'est un investissement, pas une dépense au clic.</div></details>
+    <details><summary>Comment faire du SEO ? Par où commencer ?</summary><div class="a">Commence par identifier ce que ta cible tape réellement sur Google, vérifie les bases techniques de ton site (vitesse, indexation, mobile), puis crée du contenu qui répond précisément à ces recherches.</div></details>
+    <details><summary>Quels sont les 3 types de SEO ?</summary><div class="a">Le SEO technique (structure, vitesse, indexation), le SEO on-page (contenu et mots-clés) et le SEO off-page (netlinking et autorité). Les trois se complètent.</div></details>
+    <details><summary>Quelle différence entre SEO et SEA ?</summary><div class="a">Le SEO est le référencement naturel : gratuit au clic et durable. Le SEA est la publicité payante (Google Ads) : immédiat, mais le trafic s'arrête dès que tu coupes le budget.</div></details>
+    <details><summary>Combien de temps avant de voir des résultats ?</summary><div class="a">En général 3 à 6 mois pour des résultats significatifs. Le SEO est lent à démarrer mais construit un actif durable.</div></details>
+  </div>
+</div>
+
+<div class="cta-band">
+  <h3>Ton SEO stagne ?</h3>
+  <p>Je regarde ton site gratuitement et je te dis ce qui bloque.</p>
+  <a href="https://calendly.com/adnan-kenfack/consultation" target="_blank" rel="noopener" class="btn">Réserver un audit gratuit</a>
+</div>
+
+<footer>
+  <div class="wrap">
+    <p>Adnan Kenfack — Acquisition &amp; performance</p>
+    <p style="margin-top:8px"><a href="mailto:adnan.kenfack@gmail.com">adnan.kenfack@gmail.com</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
